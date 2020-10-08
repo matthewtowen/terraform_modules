@@ -1,5 +1,5 @@
 output "url" {
-  value = "${aws_s3_bucket.website_bucket.bucket}.s3-website-${var.region}.amazonaws.com"
+  value = aws_s3_bucket.website_bucket.website
 }
 
 output "nameservers" {
