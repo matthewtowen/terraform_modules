@@ -18,6 +18,7 @@ This Terraform module creates the following AWS resources:
 * An AWS account and your credentials (`aws_access_key_id` and `aws_secret_access_key`) configured.
 * You own a domain name and have access to update the name servers.
 * The domain name and S3 bucket must be the same.
+* tfvars with "domain_name = your_domain" 
 
 ## Module Usage
 
@@ -26,6 +27,3 @@ module "s3_static_site" {
   source             = "git@github.com:matthewtowen/terraform_modules.git//s3_static_site"
   domain_name        = var.domain_name
 }
-
-"terraform.tfvars"
-domain_name = "iffleygrove.org"
