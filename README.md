@@ -27,6 +27,5 @@ module "s3_static_site" {
   domain_name        = var.domain_name
 }
 
-terraform.tfvars
-```HCL
+"terraform.tfvars"
 domain_name = "iffleygrove.org"
