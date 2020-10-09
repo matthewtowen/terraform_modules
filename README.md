@@ -19,10 +19,14 @@ This Terraform module creates the following AWS resources:
 * You own a domain name and have access to update the name servers.
 * The domain name and S3 bucket must be the same.
 
-## Usage
+## Module Usage
 
 ```HCL
 module "s3_static_site" {
   source             = "git@github.com:matthewtowen/terraform_modules.git//s3_static_site"
   domain_name        = var.domain_name
 }
+
+terraform.tfvars
+```HCL
+domain_name = "iffleygrove.org"
